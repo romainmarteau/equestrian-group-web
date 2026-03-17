@@ -11,8 +11,7 @@ const Footer = () => {
         <div className="md:w-1/3 text-center md:text-left flex flex-col justify-center">
           <h3 className="text-2xl mb-6">East End Equestrian Group</h3>
           <p className="text-white/60 text-sm leading-relaxed max-w-sm">
-            Uniting the equestrian community of the East End. We advocate for the horses,
-            the land, and the people who make this community possible.
+            A coalition of equestrians, property owners, professionals and enthusiasts dedicated to developing, preserving, and promoting the horse industry on the East End
           </p>
         </div>
 
