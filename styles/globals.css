@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sage: #C1C3AA;
+  --color-beige: #F6E9D7;
+  --color-cream: #FDF9F3;
+  --color-forest: #18211B;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Albert Sans", sans-serif;
+
+  --container-max: 1280px;
+}
+
+:root {
+  --background: #FDF9F3;
+  --foreground: #0B130E;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+}
+
+.banner-intro {
+  background-image: url("/banner-intro.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+
+.btn-primary {
+  @apply bg-forest text-white px-8 py-3 rounded-md transition-all duration-300 hover:opacity-90 active:scale-95 uppercase tracking-widest text-xs font-bold;
+}
+
+.input-field {
+  @apply w-full bg-white/50 border border-black/10 px-4 py-3 rounded-md focus:outline-none focus:border-sage transition-colors;
+}
