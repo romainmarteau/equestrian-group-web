@@ -34,12 +34,14 @@ const Footer = () => {
             href="mailto:info@eastendequestrian.com"
             className="text-white/60 hover:text-white transition-colors text-sm"
           >
-            info@eastendequestrian.com
+            info@eastendequestriangroup.com
           </a>
           <div className="mt-8 flex justify-center md:justify-end gap-6 text-white/40">
             {/* Simple social icons placeholders */}
+            {/*
             <div className="w-5 h-5 border border-white/20 rounded-sm" />
             <div className="w-5 h-5 border border-white/20 rounded-sm" />
+*/}
           </div>
         </div>
       </div>
