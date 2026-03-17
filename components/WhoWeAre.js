@@ -46,9 +46,18 @@ const WhoWeAre = () => {
           ))}
         </div>
 
-        <button className="btn-primary mt-20">
+        <button
+          onClick={() => {
+            const section = document.getElementById("how");
+            if (section) {
+              section.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          }}
+          className="btn-primary mt-20"
+        >
           JOIN THE GROUP
         </button>
+
       </div>
     </section>
   );

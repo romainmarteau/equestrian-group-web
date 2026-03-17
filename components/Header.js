@@ -68,10 +68,18 @@ const Header = () => {
                 {link.label}
               </button>
             ))}
-            <button className={`border px-6 py-2.5 rounded-md transition-all ${isScrolled
-              ? 'border-forest text-forest hover:bg-forest hover:text-white'
-              : 'border-forest text-forest hover:bg-forest hover:text-white'
-              }`}>
+            <button
+              onClick={() => {
+                const section = document.getElementById("how");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+              }}
+              className={`border px-6 py-2.5 rounded-md transition-all ${isScrolled
+                ? "border-forest text-forest hover:bg-forest hover:text-white"
+                : "border-forest text-forest hover:bg-forest hover:text-white"
+                }`}
+            >
               Join
             </button>
           </div>
@@ -108,9 +116,12 @@ const Header = () => {
                   {link.label}
                 </button>
               ))}
-              <button className="btn-primary mt-8 w-full">
-                LOG IN
-              </button>
+<button
+  onClick={() => scrollToSection("how")}
+  className="btn-primary mt-8 w-full"
+>
+  Join
+</button>
             </div>
 
             <div className="mt-auto pb-8 text-center text-forest/40 text-xs tracking-widest uppercase">

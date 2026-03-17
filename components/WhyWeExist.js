@@ -33,10 +33,18 @@ const WhyWeExist = () => {
                 <p>Together, we can protect the future of equestrian life on the East End.</p>
               </li>
             </ul>
-
-            <button className="btn-primary mt-12">
+            <button
+              onClick={() => {
+                const section = document.getElementById("how");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+              }}
+              className="btn-primary mt-12"
+            >
               MAKE A DIFFERENCE
             </button>
+
           </div>
         </div>
 

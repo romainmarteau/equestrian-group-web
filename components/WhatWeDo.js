@@ -31,9 +31,18 @@ const WhatWeDo = () => {
               </li>
             </ul>
 
-            <button className="btn-primary mt-12">
+            <button
+              onClick={() => {
+                const section = document.getElementById("how");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+              }}
+              className="btn-primary mt-12"
+            >
               JOIN THE GROUP
             </button>
+
           </div>
         </div>
 

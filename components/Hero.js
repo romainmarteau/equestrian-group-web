@@ -36,9 +36,18 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <button className="bg-sage/80 hover:bg-sage text-forest px-10 py-4 rounded-md transition-all duration-300 uppercase tracking-widest text-xs font-bold backdrop-blur-sm">
+          <button
+            onClick={() => {
+              const section = document.getElementById("how");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth", block: "start" });
+              }
+            }}
+            className="bg-sage/80 hover:bg-sage text-forest px-10 py-4 rounded-md transition-all duration-300 uppercase tracking-widest text-xs font-bold backdrop-blur-sm"
+          >
             Join the Group
           </button>
+
         </motion.div>
       </div>
 
