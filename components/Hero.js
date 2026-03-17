@@ -28,7 +28,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-white text-5xl md:text-7xl lg:text-6xl leading-[1.1] mb-12"
         >
-          (Github Romain) Uniting the Equestrian <br className="hidden md:block" /> Voice of the East End
+          (Github Romain Marteau) Uniting the Equestrian <br className="hidden md:block" /> Voice of the East End
         </motion.h1>
 
         <motion.div
