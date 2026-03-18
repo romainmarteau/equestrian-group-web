@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="description" content="A coalition of equestrians, property owners, professionals and enthusiasts dedicated to developing, preserving, and promoting the horse industry on the East End" />
         <meta name="keywords" content="equestrian, East End, horses, property owners, horse industry, equestrian community, equestrian professionals, coalition" />
         <meta name="canonical" content="" />
-        
+        <meta name="google-site-verification" content="t2ybs8JZTyvx1c7a84ZncmtKS1B-6zZ7xZPD6Rhk1Qc" />
         {/* Open Graph Meta Tags */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="" />
